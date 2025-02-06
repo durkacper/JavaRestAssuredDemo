@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "body": "This is some awesome thinking!",
+      "commentId": 242,
+      "likes": 3
+    },
+    {
+      "id": 2,
+      "body": "What terrific math skills you're showing!",
+      "commentId": 46,
+      "likes": 4
+    },
+    {
+      "id": 3,
+      "body": "You are an amazing writer!",
+      "commentId": 235,
+      "likes": 2
+    },
+    {
+      "id": 4,
+      "body": "Wow! You have improved so much!",
+      "commentId": 31,
+      "likes": 1
+    },
+    {
+      "id": 5,
+      "body": "Nice idea!",
+      "commentId": 212,
+      "likes": 1
+    }
+  ]
+}
