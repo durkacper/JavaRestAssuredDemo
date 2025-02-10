@@ -14,7 +14,7 @@ public class ReplacePostTest extends BaseTest {
 
         Post newPost = given()
                 .spec(reqSpec)
-                .pathParam("postId", 2)
+                .pathParam("postId", 3)
                 .body(post)
                 .when()
                 .put("{postId}")

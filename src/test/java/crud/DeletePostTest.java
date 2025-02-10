@@ -10,7 +10,7 @@ public class DeletePostTest extends BaseTest {
     public void deletePost() {
         given()
                 .spec(reqSpec)
-                .pathParam("postId", 4)
+                .pathParam("postId", 5)
         .when()
                 .delete("{postId}")
         .then()

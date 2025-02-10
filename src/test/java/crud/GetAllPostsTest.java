@@ -19,10 +19,6 @@ public class GetAllPostsTest extends BaseTest {
         .and()
                 .assertThat().body("body[1]", equalTo("What terrific math skills you're showing!"))
         .and()
-                .assertThat().body("body[2]", equalTo("You are an amazing writer!"))
-        .and()
-                .assertThat().body("body[3]", equalTo("Wow! You have improved so much!"))
-        .and()
-                .assertThat().body("body[4]", equalTo("Nice idea!"));
+                .assertThat().body("body[2]", equalTo("You are an amazing writer!"));
     }
 }

@@ -8,7 +8,9 @@ import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
@@ -21,7 +23,7 @@ public class BaseTest {
     protected RequestSpecification reqSpec;
     protected ResponseSpecification respSpec;
 
-    @BeforeSuite
+    @BeforeClass
     public void setup() {
         reqSpec = new RequestSpecBuilder()
                 .setBaseUri("http://localhost:3000")
@@ -39,7 +41,7 @@ public class BaseTest {
         RestAssured.filters(reqLog, respLog);
     }
 
-    @AfterSuite
+    @AfterClass
     public void tearDown() throws IOException {
         // Delete the file after all tests are executed
         File dbFile = new File(System.getProperty("user.home") + "/postsDb.json");

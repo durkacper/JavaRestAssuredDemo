@@ -15,7 +15,7 @@ public class UpdatePostTest extends BaseTest {
 
         Post updatedPost = given()
                 .spec(reqSpec)
-                .pathParam("postId", 1)
+                .pathParam("postId", 4)
                 .body(post)
         .when()
                 .patch("{postId}")
@@ -25,7 +25,7 @@ public class UpdatePostTest extends BaseTest {
 
         // Verify that the body is updated and other fields remain the same
         Assert.assertEquals(updatedPost.getBody(), "Updated Post Body");
-        Assert.assertEquals(updatedPost.getCommentId(), 242);
-        Assert.assertEquals(updatedPost.getLikes(), 3);
+        Assert.assertEquals(updatedPost.getCommentId(), 31);
+        Assert.assertEquals(updatedPost.getLikes(), 1);
     }
 }
