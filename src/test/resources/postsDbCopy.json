@@ -29,6 +29,12 @@
       "body": "Nice idea!",
       "commentId": 212,
       "likes": 1
+    },
+    {
+      "id": 6,
+      "body": "Good job!",
+      "commentId": 333,
+      "likes": 15
     }
   ]
 }
